@@ -16,7 +16,7 @@
  输入数字的题也会随机选择。
  
 ## 适用范围
- 本程序是针对 `bms.yujingceping.com` 上的 `素养测评` 和 `测评` 而开发的。我们不确定它在其他地方能否工作。
+ 本程序是针对 [中小学教育质量综合评价](https://bms.yujingceping.com/#/choose) 上的 [素养测评](literacy-cep.yujingceping.com/#/index?examId=46) 和 [测评](https://ce.yujingceping.com/#/student/studentSideTest) 而开发的。我们不确定它在其他试题处能否工作。
  
  其中部分有动画或播放声音的可能会需要手动点击下一题。
  
