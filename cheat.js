@@ -34,15 +34,10 @@ function clickSub(name)
     try{click(next);}
     catch(e)
     {
-    try
-    {
         next=document.getElementsByClassName("cepBtn cepBtnNormal");
         click(next);
-    }
-    catch(e)
-    {
         document.getElementsByClassName("next_step")[0].children[1].click();
-        document.getElementById("goTest").click()
-    }
+        document.getElementById("goTest").click();
+        click(document.getElementsByClassName("el-button btn-start el-button--default"));
     }
 })
