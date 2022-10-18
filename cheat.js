@@ -42,13 +42,15 @@ function clickSub(name)
             click(next);
         else
         {
-            next=document.getElementsByClassName("next_step")[0].children;
-            if(next.length==1)
-                next[0].click();
-            else
-                next[1].click();
-            document.getElementById("goTest").click();
-            document.getElementsByClassName("el-button btn-start el-button--default")[0].click();
+            try{
+                next=document.getElementsByClassName("next_step")[0].children;
+                if(next.length==1)
+                    next[0].click();
+                else
+                    next[1].click();
+            }
+            try{document.getElementById("goTest").click();}
+            try{document.getElementsByClassName("el-button btn-start el-button--default")[0].click();}
         }
     }
 })
