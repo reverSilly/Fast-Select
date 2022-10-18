@@ -44,7 +44,7 @@ function clickSub(name)
         {
             document.getElementsByClassName("next_step")[0].children[1].click();
             document.getElementById("goTest").click();
-            document.getElementsByClassName("el-button btn-start el-button--default")[0].click();\
+            document.getElementsByClassName("el-button btn-start el-button--default")[0].click();
         }
     }
 })
