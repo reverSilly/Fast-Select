@@ -42,7 +42,11 @@ function clickSub(name)
             click(next);
         else
         {
-            document.getElementsByClassName("next_step")[0].children[1].click();
+            next=document.getElementsByClassName("next_step")[0].children;
+            if(next.length==1)
+                next[0].click();
+            else
+                next[1].click();
             document.getElementById("goTest").click();
             document.getElementsByClassName("el-button btn-start el-button--default")[0].click();
         }
