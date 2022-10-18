@@ -25,17 +25,19 @@ function clickSub(name)
     }
 }
     chooses=[...document.getElementsByClassName("el-radio__inner")];
-    next=document.getElementsByClassName("yt-btn yt-btn-next");
     click(chooses);
     clickSub("options");
     clickSub("option");
     clickSub("keyboard");
-    document.getElementsByClassName("el-button el-button--default el-button--small el-button--primary sure-btn")[0].click();
+    next=document.getElementsByClassName("el-button el-button--default el-button--small el-button--primary sure-btn");
+    if(next.length!=0)
+        next[0].click();
+    next=document.getElementsByClassName("yt-btn yt-btn-next");
     try{click(next);}
     catch(e)
     {
         next=document.getElementsByClassName("cepBtn cepBtnNormal");
-        click(next);
+        next[0].click();
         document.getElementsByClassName("next_step")[0].children[1].click();
         document.getElementById("goTest").click();
         document.getElementsByClassName("el-button btn-start el-button--default")[0].click();
