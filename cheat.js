@@ -30,13 +30,14 @@ function clickSub(name)
     clickSub("options");
     clickSub("option");
     clickSub("keyboard");
-    try{next[0].click();}
+    clickSub("el-message-box");
+    try{click(next);}
     catch(e)
     {
     try
     {
         next=document.getElementsByClassName("cepBtn cepBtnNormal");
-        next[0].click();
+        click(next);
     }
     catch(e)
     {
