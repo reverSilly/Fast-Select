@@ -38,9 +38,13 @@ function clickSub(name)
     else
     {
         next=document.getElementsByClassName("cepBtn cepBtnNormal");
-        next[0].click();
-        document.getElementsByClassName("next_step")[0].children[1].click();
-        document.getElementById("goTest").click();
-        document.getElementsByClassName("el-button btn-start el-button--default")[0].click();
+        if(next.length!=0)
+            next[0].click();
+        else
+        {
+            document.getElementsByClassName("next_step")[0].children[1].click();
+            document.getElementById("goTest").click();
+            document.getElementsByClassName("el-button btn-start el-button--default")[0].click();\
+        }
     }
 })
