@@ -30,7 +30,7 @@ function clickSub(name)
     clickSub("options");
     clickSub("option");
     clickSub("keyboard");
-    clickSub("el-message-box");
+    document.getElementsByClassName("el-button el-button--default el-button--small el-button--primary sure-btn")[0].click();
     try{click(next);}
     catch(e)
     {
