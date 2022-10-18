@@ -33,8 +33,9 @@ function clickSub(name)
     if(next.length!=0)
         next[0].click();
     next=document.getElementsByClassName("yt-btn yt-btn-next");
-    try{click(next);}
-    catch(e)
+    if(next.length!=0)
+        next[0].click();
+    else
     {
         next=document.getElementsByClassName("cepBtn cepBtnNormal");
         next[0].click();
