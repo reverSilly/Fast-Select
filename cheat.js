@@ -48,9 +48,9 @@ function clickSub(name)
                     next[0].click();
                 else
                     next[1].click();
-            }
-            try{document.getElementById("goTest").click();}
-            try{document.getElementsByClassName("el-button btn-start el-button--default")[0].click();}
+            }catch(e){}
+            try{document.getElementById("goTest").click();}catch(e){}
+            try{document.getElementsByClassName("el-button btn-start el-button--default")[0].click();}catch(e){}
         }
     }
 })
